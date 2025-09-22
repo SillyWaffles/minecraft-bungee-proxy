@@ -1,0 +1,25 @@
+servers:
+  paper:
+    motd: '&b&lServidor Paper 1.21.8'
+    address: 91.197.5.213:26666  # Dominio de MineStrator
+    restricted: false
+    hidden: false
+    max_players: 50
+listeners:
+  - query_port: 26666
+    motd: '&1Proxy para EaglerCraft'
+    priorities:
+      - paper
+    bind_local_address: true
+    host: 0.0.0.0:26666  # Puerto 26666 para TCP
+    max_players: 50
+    tab_size: 60
+    force_default_server: true
+    ping_passthrough: false
+    short_ping: false
+    timeout: 30000
+    connection_throttle: -1
+tab_list: GLOBAL_PING
+player_shuffle: 0
+ip_forward: true
+online_mode: false

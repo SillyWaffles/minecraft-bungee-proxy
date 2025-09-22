@@ -15,4 +15,4 @@ env:
 build:
   type: buildpack
   builder: heroku/buildpacks:20
-run_command: java -Xms256M -Xmx512M -jar waterfall.jar
+run_command: bash start.sh

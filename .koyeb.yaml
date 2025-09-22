@@ -1,0 +1,18 @@
+name: bungee-proxy
+type: web
+ports:
+  - name: minecraft
+    port: 26666
+    protocol: tcp
+    proxy: true
+  - name: websocket
+    port: 443
+    protocol: http
+    public: true
+env:
+  - key: JAVA_VERSION
+    value: "17"
+build:
+  type: buildpack
+  builder: heroku/buildpacks:20
+run_command: java -Xms256M -Xmx512M -jar waterfall.jar

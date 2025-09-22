@@ -1,0 +1,12 @@
+name: bungee-proxy
+type: web
+ports:
+  - name: minecraft
+    port: 26666
+    protocol: tcp  # Para conexiones Java
+  - name: websocket
+    port: 443
+    protocol: http  # Para wss:// EaglerCraft
+env:
+  - key: JAVA_VERSION
+    value: "17"  # Compatible con 1.21

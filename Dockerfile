@@ -6,5 +6,5 @@ RUN mkdir plugins
 RUN wget -O plugins/ViaVersion.jar https://hangarcdn.papermc.io/plugins/ViaVersion/ViaVersion/versions/5.4.2/PAPER/ViaVersion-5.4.2.jar && \
     wget -O plugins/ViaBackwards.jar https://hangarcdn.papermc.io/plugins/ViaVersion/ViaBackwards/versions/5.4.2/PAPER/ViaBackwards-5.4.2.jar && \
     wget -O plugins/ViaRewind.jar https://github.com/ViaVersion/ViaRewind/releases/download/4.0.9/ViaRewind-4.0.9.jar
-EXPOSE 26666
+EXPOSE 25565  # Cambiado a 25565
 CMD ["java", "-Xms256M", "-Xmx512M", "-jar", "velocity.jar"]

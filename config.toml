@@ -1,14 +1,14 @@
 # config.toml de Velocity
-bind Ascendancy bind = "0.0.0.0:26666"
+bind = "0.0.0.0:26666"
 motd = "Proxy para EaglerCraft"
 show-max-players = 20
 show-ping-requests = false
-player-info-forwarding-mode = "modern"  # Forwarding moderno, soportado por Paper
+player-info-forwarding-mode = "legacy"  # Cambiado a legacy para compatibilidad
 
 [servers]
 try = ["paper"]
 [servers.paper]
-address = "91.197.5.213:26666"
+address = "91.197.5.213:26666"  # Servidor Paper en MineStrator
 motd = "Tu Servidor Paper 1.21.x"
 hidden = false
 max-players = 20

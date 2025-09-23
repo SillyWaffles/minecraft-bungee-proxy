@@ -1,14 +1,14 @@
 # config.toml de Velocity
-bind = "0.0.0.0:26666"
+bind = "0.0.0.0:25565"  # Cambiado a 25565 para alinearse con lo que Koyeb usa
 motd = "Proxy para EaglerCraft"
 show-max-players = 20
 show-ping-requests = false
-player-info-forwarding-mode = "legacy"  # Cambiado a legacy para compatibilidad
+player-info-forwarding-mode = "legacy"
 
 [servers]
 try = ["paper"]
 [servers.paper]
-address = "91.197.5.213:26666"  # Servidor Paper en MineStrator
+address = "91.197.5.213:26666"  # Servidor Paper sigue en 26666
 motd = "Tu Servidor Paper 1.21.x"
 hidden = false
 max-players = 20
@@ -30,4 +30,4 @@ server = "paper"
 
 [query]
 enabled = false
-port = 26666
+port = 25565  # Cambiado a 25565
